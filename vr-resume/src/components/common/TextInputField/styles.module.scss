@@ -1,0 +1,18 @@
+.default_inputField_style {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  label,
+  input {
+    font-weight: 600px;
+    font-size: 24px;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  input {
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #cfcfcf;
+  }
+}

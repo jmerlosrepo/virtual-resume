@@ -1,0 +1,11 @@
+.default_button_style {
+  min-width: 80px;
+  min-height: 40px;
+  font-weight: 600;
+  border: 2px solid #cfcfcf;
+  border-radius: 3px;
+  &:hover {
+    background-color: #0c0c0c;
+    color: #ccc;
+  }
+}

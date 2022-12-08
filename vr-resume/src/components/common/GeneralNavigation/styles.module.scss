@@ -1,0 +1,50 @@
+nav {
+  padding: 0;
+  background: rgb(9, 0, 159);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 0, 159, 1) 0%,
+    rgba(91, 91, 251, 1) 100%
+  );
+  border-radius: 6px;
+  ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    min-height: 45px;
+    li {
+      display: table;
+    }
+  }
+}
+
+.link {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  min-width: 150px;
+  text-align: center;
+  color: #fff;
+  &:hover {
+    color: #5b5bfb;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    min-width: 100hv;
+    ul {
+      flex-direction: column;
+      justify-content: center;
+      li {
+        min-width: auto;
+        padding: 2px;
+      }
+    }
+  }
+  .link {
+    min-width: auto;
+  }
+}

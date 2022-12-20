@@ -1,3 +1,5 @@
+@import "../styles.module.scss";
+
 html {
   font-size: 24px;
   font-weight: 300;
@@ -5,10 +7,19 @@ html {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-.conatiner {
+
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }

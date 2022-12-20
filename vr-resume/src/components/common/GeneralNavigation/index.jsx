@@ -1,9 +1,10 @@
 import { NavLink } from "react-router-dom";
+
 import styles from "./styles.module.scss";
 
 const GeneralNavigation = () => {
   return (
-    <nav>
+    <nav className={styles.generalNavigation}>
       <ul>
         <li>
           <NavLink className={styles.link} to="/">
@@ -13,6 +14,11 @@ const GeneralNavigation = () => {
         <li>
           <NavLink className={styles.link} to="/login">
             Login
+          </NavLink>
+        </li>
+        <li>
+          <NavLink className={styles.link} to="/register">
+            Register
           </NavLink>
         </li>
       </ul>

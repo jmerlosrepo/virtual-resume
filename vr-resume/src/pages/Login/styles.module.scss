@@ -1,3 +1,5 @@
+@import "../../styles.module.scss";
+
 .loginForm {
   display: flex;
   flex-direction: column;
@@ -8,6 +10,11 @@
   border: 1px solid hsl(0, 0%, 81%);
   max-width: 600px;
   border-radius: 4px;
+  background-color: #fff;
+  a {
+    align-self: center;
+    margin: 10px;
+  }
   button {
     align-self: flex-end;
   }

@@ -16,7 +16,7 @@ const Login = () => {
   };
 
   return (
-    <div className={pageStyles.conatiner}>
+    <div className={pageStyles.container}>
       <h1>Virtual Resume User Access</h1>
       <form className={styles.loginForm} onSubmit={handleSubmit}>
         <TextInputField

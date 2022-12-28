@@ -2,38 +2,47 @@ import { useRef } from "react";
 
 import Button from "../../../components/common/Button";
 import TextInputField from "../../../components/common/TextInputField";
+import TextAreatField from "../../../components/common/TextAreaField";
 
 import styles from "./styles.module.scss";
 
-const Education = () => {
-  const education = {
-    institution: "",
-    degree: "",
+const Career = () => {
+  const career = {
+    companyName: "",
+    jobTitle: "",
     startDate: "",
     endDate: "",
+    activities: "",
   };
 
-  const institutionRef = useRef("");
-  const degreeRef = useRef("");
+  const companyRef = useRef("");
+  const jobTitleRef = useRef("");
   const startDateRef = useRef("");
   const endDateRef = useRef("");
+  const jobActivitiesRef = useRef("");
 
   const handleSubmit = () => {
-    education.institution = institutionRef.current.value;
-    education.degree = degreeRef.current.value;
-    education.startDate = startDateRef.current.value;
-    education.endDate = endDateRef.current.value;
+    career.companyName = companyRef.current.value;
+    career.jobTitle = jobTitleRef.current.value;
+    career.startDate = startDateRef.current.value;
+    career.endDate = endDateRef.current.value;
+    career.activities = jobActivitiesRef.current.value;
   };
+
   const handleCancel = () => {};
 
   return (
-    <form>
+    <form className="">
       <TextInputField
-        labelText="Institution"
-        inputRef={institutionRef}
-        name="institution"
+        labelText="Company"
+        inputRef={companyRef}
+        name="company"
       />
-      <TextInputField labelText="Degree" inputRef={degreeRef} name="degree" />
+      <TextInputField
+        labelText="Job Title"
+        inputRef={jobTitleRef}
+        name="jobTitle"
+      />
       <div className={styles.field_group_sides}>
         <TextInputField
           labelText="Start Date"
@@ -46,6 +55,11 @@ const Education = () => {
           name="endDate"
         />
       </div>
+      <TextAreatField
+        name="jobActivities"
+        labelText="Activities"
+        textAreaRef={jobActivitiesRef}
+      />
       <div className={styles.button_group}>
         <Button text="Cancel" onClick={handleCancel} />
         <Button text="Save" onClick={handleSubmit} />
@@ -54,4 +68,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Career;

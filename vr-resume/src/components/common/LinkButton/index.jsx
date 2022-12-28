@@ -13,7 +13,7 @@ const LinkButton = ({
   return (
     <a
       style={customStyles}
-      className={`${styles.default_linkButton_styles} ${classes}`}
+      className={`${styles.default_linkButton_styles} ` + classes}
       href="/#"
       onClick={(e) => handleClick(e)}
     >

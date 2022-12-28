@@ -1,1 +1,19 @@
 @import "../../../styles.module.scss";
+.default_textArea_style {
+  display: flex;
+  flex-direction: column;
+  label,
+  textarea {
+    font-weight: 600px;
+    font-size: 24px;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  textarea {
+    resize: none;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid #cfcfcf;
+  }
+}

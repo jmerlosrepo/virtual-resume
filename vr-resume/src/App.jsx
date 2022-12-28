@@ -1,7 +1,10 @@
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 
+import Career from "./pages/Sections/Career";
+import Education from "./pages/Sections/Education";
 import ErrorPage from "./pages/ErrorPage";
 import Login from "./pages/Login";
+import Projects from "./pages/Sections/Projects";
 import Register from "./pages/Register";
 import Resume from "./pages/Resume";
 import Root from "./pages/Root";
@@ -19,6 +22,9 @@ const router = createBrowserRouter([
       { path: "/register", element: <Register /> },
       { path: "/resume", element: <Resume /> },
       { path: "/sections", element: <Sections /> },
+      { path: "/sections/career", element: <Career /> },
+      { path: "/sections/education", element: <Education /> },
+      { path: "/sections/projects", element: <Projects /> },
     ],
   },
 ]);

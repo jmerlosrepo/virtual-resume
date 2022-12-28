@@ -16,7 +16,7 @@ const Register = () => {
 
   return (
     <div className={pageStyles.container}>
-      <h1>Register user basic information</h1>
+      <h1>Create New Account</h1>
       <form className={styles.registerForm}>
         <TextInputField
           inputRef={usernameRef}

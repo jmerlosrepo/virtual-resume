@@ -5,3 +5,14 @@ body {
 .roundImage {
   border-radius: 100%;
 }
+
+.field_group_sides {
+  display: flex;
+  flex-direction: row;
+}
+
+.button_group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right;
+}

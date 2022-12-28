@@ -1,1 +1,10 @@
 @import "../../../styles.module.scss";
+.file_input_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    height: 30px;
+  }
+}

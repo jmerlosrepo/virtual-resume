@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 const Image = ({
   src,
   alt = "",
-  classNames = "",
+  classes = "",
   customStyles = {},
   sources = [],
 }) => {
@@ -15,7 +15,7 @@ const Image = ({
         ))}
       <img
         loading="lazy"
-        className={classNames}
+        className={classes}
         style={customStyles}
         src={src}
         alt={alt}

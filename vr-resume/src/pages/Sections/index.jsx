@@ -60,7 +60,7 @@ const Sections = () => {
       images: [
         {
           id: 1,
-          url: "https://learn.microsoft.com/es-es/visualstudio/data-tools/media/raddata-data-source-drag-operation.png?view=vs-2022",
+          src: "https://learn.microsoft.com/es-es/visualstudio/data-tools/media/raddata-data-source-drag-operation.png?view=vs-2022",
         },
       ],
     },

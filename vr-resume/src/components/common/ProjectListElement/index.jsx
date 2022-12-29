@@ -2,6 +2,7 @@ import Image from "../Image";
 import ListElementDates from "../ListElementDates";
 import ListElementDescription from "../ListElementDescription";
 import ListElementHeader from "../ListElementHeader";
+import ThumbnailList from "../ThumbnailList";
 
 import styles from "./styles.module.scss";
 
@@ -13,9 +14,7 @@ const ProjectListElement = ({ projectData, elementControls }) => {
       <ListElementDates startDate={startDate} endDate={endDate} />
       <ListElementDescription text={description} />
       <div className={styles.gallery}>
-        {images.map((image) => (
-          <Image key={`img-${image.id}`} src={image.url} />
-        ))}
+        <ThumbnailList images={images} isClickable={false} />
       </div>
       {elementControls}
     </div>

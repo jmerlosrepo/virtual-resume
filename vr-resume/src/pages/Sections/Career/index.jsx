@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useParams } from "react-router-dom";
 
 import Button from "../../../components/common/Button";
 import TextInputField from "../../../components/common/TextInputField";
@@ -7,6 +8,12 @@ import TextAreatField from "../../../components/common/TextAreaField";
 import styles from "./styles.module.scss";
 
 const Career = () => {
+  let carrerId = "";
+
+  if (Object.keys(useParams()).length > 0) {
+    carrerId = useParams().carrerId;
+  }
+
   const career = {
     companyName: "",
     jobTitle: "",

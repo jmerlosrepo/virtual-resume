@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Resume from "./pages/Resume";
 import Root from "./pages/Root";
 import Sections from "./pages/Sections";
+import SelfPresentation from "./pages/Sections/SelfPresentation";
 
 import styles from "./styles.module.scss";
 
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       { path: "/sections/career/:careerId", element: <Career /> },
       { path: "/sections/education", element: <Education /> },
       { path: "/sections/projects", element: <Projects /> },
+      { path: "/sections/about-me", element: <SelfPresentation /> },
     ],
   },
 ]);

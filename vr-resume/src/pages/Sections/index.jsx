@@ -27,7 +27,10 @@ const Sections = () => {
     zip: "30318",
   };
 
-  const selfPresentation = "This is my story...";
+  const selfPresentation = {
+    title: "Software Engineer",
+    aboutMe: "This is my story...",
+  };
 
   const careerData = [
     {
@@ -113,7 +116,7 @@ const Sections = () => {
       </Section>
       <Section title="About Me">
         <SelfPresentationText
-          text={selfPresentation}
+          selfPresentationData={selfPresentation}
           controls={
             <EditDeleteControls
               elementId={ProfileData.id}

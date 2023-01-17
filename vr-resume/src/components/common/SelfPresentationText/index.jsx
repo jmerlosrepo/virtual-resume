@@ -1,10 +1,18 @@
 import styles from "./styles.module.scss";
 
-const SelfPresentationText = ({ text, customStyles, classNames, controls }) => {
+const SelfPresentationText = ({
+  selfPresentationData,
+  customStyles,
+  classNames,
+  controls,
+}) => {
   return (
     <div>
+      Title
+      <p>{selfPresentationData.title}</p>
+      About Me Text
       <p className={classNames} style={customStyles}>
-        {text}
+        {selfPresentationData.aboutMe}
       </p>
       {controls}
     </div>
